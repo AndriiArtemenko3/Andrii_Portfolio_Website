@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+  <div id="Layer1_Container" class="w-screen h-screen bg-stone-950">
+    <div class="w-screen h-30 fixed z-10">
+      <nav id="NavBar" class="w-screen relative flex justify-normal h-20 bg-stone-950">
+        <div id="HambMenu_Container" class="h-20 w-20 relative bg-stone-950 flex justify-center shrink-0">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" stroke-width="2">
+              <path d="M4 6l16 0"></path>
+              <path d="M4 12l16 0"></path>
+              <path d="M4 18l16 0"></path>
+            </svg>
+          </button>
+        </div>
+        <div id="LogoHolder_Container" class="h-20 w-60 relative bg-stone-950"></div>
+        <div id="Buttons" class="lg:h-20 lg:w-[700px] lg:relative lg:flex lg:flex-row">
+          <ul class="hidden lg:text-3xl lg:text-white lg:font-medium lg:font-sans lg:flex lg:flex-row lg:justify-between lg:gap-10 lg:py-5 lg:px-5">
+            <li>
+              <a href="index.html" class="block outline-1 outline-dotted outline-offset-8 rounded-md hover:bg-purple-400 hover:text-black">Home</a>
+            </li>
+            <li>
+              <a href="aboutMe.html" class="block outline-1 outline-dotted outline-offset-8 rounded-md hover:bg-purple-400 hover:text-black">About Me</a>
+            </li>
+            <li>
+              <a href="" class="block outline-1 outline-dotted outline-offset-8 rounded-md hover:bg-purple-400 hover:text-black">Get in touch</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="ToolBar" class="w-screen h-10 bg-purple-500 flex justify-start ring-2 ring-black">
+        <div id="TB_Theme_Container" class="h-10 w-20 relative ring-2 ring-black"></div>
+        <button id="TB_BiggerIcons_Cont" class="h-10 w-20 relative flex justify-center cursor-pointer" alt="Button for adjusting the icon sizes" onclick="TabShowHide()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+            <path d="M3 5h11"></path>
+            <path d="M12 7l2 -2l-2 -2"></path>
+            <path d="M5 3l-2 2l2 2"></path>
+            <path d="M19 10v11"></path>
+            <path d="M17 19l2 2l2 -2"></path>
+            <path d="M21 12l-2 -2l-2 2"></path>
+            <path d="M3 10m0 2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2z"></path>
+          </svg>
+        </button>
+        <div id="TB_TextButtons" class="h-10 w-32 relative ring-2 ring-black flex justify-start">
+          <button id="sm_txt_btn" class="h-10 w-20 relative flex justify-center " onclick="changeFontSize('decrease')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+              <path d="M6.5 15.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"></path>
+              <path d="M10 12v7"></path>
+              <path d="M17.5 15.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"></path>
+              <path d="M21 12v7"></path>
+            </svg>
+          </button>
+          <button id="md_txt_btn" class="h-10 w-20 relative flex justify-center" onclick="changeFontSize('increase')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+                <path d="M3 19v-10.5a3.5 3.5 0 0 1 7 0v10.5"></path>
+                <path d="M3 13h7"></path>
+                <path d="M14 19v-10.5a3.5 3.5 0 0 1 7 0v10.5"></path>
+                <path d="M14 13h7"></path>
+              </svg>
+          </button>
+        </div>
+      </div>
+      <div id="Popup_w2" class="hidden z-10 h-32 w-20 absolute bg-green-700 left-20 top-32"></div>
+    </div>
+    <div id="Layer2_Container" class="bg-stone-800 relative flex justify-start flex-col shrink-0 w-screen inset-y-32">
+        <h1 class="text-4xl text-white p-5">Project 01 - Critical Thinking Essay</h1>
+        <h2 class="text-2xl text-white p-5">Computational Networks in Politics - How political leaders and groups use social networks to influence public perception</h2>
+        <article id="text" class="text-base text-white p-5">
+            <p>As of October 2024, the number of internet users and social media users has reached five billion, five hundred twenty million, and five billion, two hundred twenty million, respectively. (Petrosyan, Number of internet and social media users worldwide as of October 2024, 2024). Globally, people average 6 hours and 40 minutes of screentime, with Gen Z averaging 9 hours of screentime per day (Duarte, Alarming Average Screen Time Statistics (2024) 2025). In the UK, online sources are the second most used platform behind broadcast TV, used by over two thirds of the UK adults. A majority of 16-to-24-year-olds consume news online, with eighty three percent consuming news online and seventy one percent consuming news from the social media. (Ofcom - News consumption in the UK: 2023 Research findings 2023) .These are just some of the indicators that reflect current state of news and media consumption, and more broadly, that reflects that the internet networks are beginning to dominate the information streams for young adults, and future generations will be even more affected by them.</p>
+            <br>
+            <p>This essay will examine how politicians and political groups use social networks of communication to influence public perception. It will focus on algorithms of information in the modern web, the way fake news are used to confuse the public, and what social implications they have. The findings will be based on empirical data and research conducted in the recent years. The key thinkers linked to the research are Noah Giansiracusa, Mark Graham, and William H. Dutton. </p>
+            <br>
+            <p>The first major argument is that the social network algorithms can be exploited by political actors to gain political power or to spread misinformation among the viewers. One of the most significant websites where fake news spread is YouTube. It has over two billion users across the globe. To give a perspective, that is more than the number of households that own a TV. YouTube’s traffic is estimated to be the second highest of any website, behind only Google.com. (Giansiracusa, 4 - Autoplay the Autocrats 2021). YouTube’s algorithm is powerful, yet mysterious mechanism that dictates what the user will or will not see. Its fairness and neutrality, when it comes to issues of politics, has been debated over a long time now. One good example of it is the incident that happened in Brazil during the presidential election in 2018. Jair Bolsonaro, the country's authoritarian far-right president, not long ago was a fringe figure with little national recognition, who used to produce content full of extremism and conspiracy theories and would upload it on YouTube. Very rapidly his videos were recommended to more users in Brazil, and the numbers of his followers grew exponentially. He then rode this wave of popularity to presidential victory in 2018. According to 2019 New York Times investigation, one local vice president of Bolsonaro credited most of the party’s political recruitment to YouTube. (Giansiracusa, 4 - Autoplay the Autocrats 2021).</p>
+            <br>
+            <p>It cannot be said that it is YouTube’s goal to promote far-right content specifically, Giansiracusa points out. It simply has to do with the fact that content that plays on user’s emotions – such as fear, doubt, and anger, is rewarded by YouTube algorithm (Giansiracusa, 4 - Autoplay the Autocrats 2021). When the system is designed to reward the creator, based on two main variables – watch time and ad revenue generation, the other key factors, such as ethics and quality of the information remain non-regulated and overlooked.</p>
+            <br>
+            <p>Another illustration of how the misinformation spreads on YouTube is an incident that occurred with its AI-generated news feed. In December 2019, it was found that some of the news that ended up in algorithmically generated CNN channel, were not posted by the CNN original account. What these organisations did was changing the thumbnail to present more shocking and alarming news, while the actual video was clip was taken from the official CNN broadcast. It is estimated that these channels were not associated with any governments or organisations but instead used click-bait to generate profits (Giansiracusa, 4 - Autoplay the Autocrats 2021).</p>
+            <br>
+            <p>An independent attempt to understand the connection between YouTube algorithm and conspiracy theories was a longitudinal study, conducted in the spring of 2020 by two professors at UC Berkley. They first used text-based supervised machine learning to train an algorithm to estimate whether a video was conspiratorial by looking at the description, transcript, and comments. Then, they applied it to eight million videos recommended by over a fifteen-month period to a logged-out user after watching videos from the popular news channels. To give some context to the story, just before that in 2019, YouTube made an announcement that it would begin reducing recommendations of borderline content and content that could misinform users in harmful ways. The study found, that indeed, the number of conspiracy theory videos dropped by seventy percent, but then pulled back to forty percent lower than before the drop. (Giansiracusa, 4 - Autoplay the Autocrats 2021). It suggests that YouTube does make the efforts to reduce harmful content, but what is considered ‘harmful’ for YouTube seems blurry and non-transparent. For example, during the study, Chaslot-Berkley found that the results of reduction varied around diverse categories of conspiracy theories. Flat Earth videos and 9/11 hoax videos have been completely eliminated from the platform, while climate change denial videos and videos claiming aliens built the pyramids persisted and even flourished (Giansiracusa, 4 - Autoplay the Autocrats 2021). </p>
+            <br>
+            <p></p>The findings suggest that YouTube’s algorithm was heavily exploited by the conspiracy theorists, fake news propagators and extremist politicians. YouTube was proven to be a platform that can influence public perception significantly, as seen in story with 2018 election in Brazil. To summarise, while the platform made the effort to reduce the promotion of ‘harmful content’ its rates are inconsistent and non-transparent. It allows certain type of fake news and propaganda, while prohibits others, which further promotes informational inequality and ‘echo-chambers’.</p>
+            <br>
+            <p>Another significant argument, is that the use of bot networks and artificial traffic generation can be effective tool for a political leader or party. In 2016, there were many accusations that Trump won the election because of fake news and social networks manipulation by the Russians. One way in which search engine, like Google, can be manipulated, is by artificially creating a network of inter-connected fake news, linking them together back and forth, thus manipulating the search engine into indexing this type of fake information higher than the reputable sources. In one study on hyperlink analysis, the researchers found that pro-Trump sources had more links between each other, which helped them to appear higher in the search results. Fake news supporting Trump trended on Facebook through algorithms, whereas Google autocompletes and returns favoured Trump, spreading false information with a far-right bias (Herbert & Fisher-Høyrem, Social Media and social order 2022). </p>
+            <br>
+            <p>While it is difficult to demonstrate a relationship between the consumption of social media news by citizens and its effect on their political belief, there seems to be a correlation between the quantity of content that circulates in the social media networks that supports a political movement or politician, and popularity of such movement or political candidate (Graham & Dutton, Society and the internet: How networks of information and communication are changing our lives 2019).</p>
+            <br>
+            <p>In January 2019, a research paper was published that took a deep data dive into the dynamics of fake news on Twitter in the 2016 election. The researchers gathered every tweet they could find concerning Hilary Clinton and Donald Trump in the five-month leading to the election, and used machine algorithms to sort tweets into regular, bot-like and those that were spreading fake news. They found that ten percent of total tweets were linked to fake news, and other fifteen percent to were linked to extremely biased news. By looking at retweets, researchers were able to study the network flow of information and identify key influencers. They found that top spread of traditional news were journalists and public figures with verified twitter accounts, while for fake news the top spreaders were unknown users and deleted accounts. On top of that, accounts linked to fake news were more likely to be right-wing then centre or left-wing. (Giansiracusa, 8 – Social Spread 2021). Moreover, a network of bots was used to spread rumours about Hilary Clinton and ‘Pizza Gate’ conspiracy theory prior to the election. (Herbert & Fisher-Høyrem, Social Media and social order 2022).  Based on the evidence provided, it appears, that an inter-connected network of social media accounts has manipulated major computational internet algorithms in 2016, by spreading fake news and rumours, that favoured Donald Trump’s political position. It led to more ‘traditional’ or ‘rational’ news to be pushed out from the spotlight, while fake news appeared at the top results on Google, YouTube, and social media networks. The activity of these networks was generated primarily from unknown accounts, that exhibit bot-like behaviour and are heavily biased towards far-right movements.</p>
+            <br>
+            <p>This essay has demonstrated how modern networks of communication are used by political leaders and organisations and how it affects the society around us and public’s political choices. Algorithms in social media networks can be manipulated by exploiting their vulnerabilities, such as lack of adequate moderation on the platforms, focus on profits over societal implications, prioritisation of watch-time and user engagement over general content quality. Another finding is that the inter-connected networks can be used to reinforce the algorithms of the social media to promote fake news and heavily biased news, pushing people to more extreme echo-chambers. A substantial number of these posts are generated by bots, that are connected to each other in the social nets by likes, reposts, and comments. By understanding how the social media platforms and algorithms work, people would be more critical towards the information they see online. The overall trend for Gen Z and younger adults shows that social networks will become even more relevant in the political environment of the future, and without the clear platform’s policy, transparency, and better security measures, democracy and freedom of speech can be at stake for the future generations.</p>
+        </article>
+        </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
