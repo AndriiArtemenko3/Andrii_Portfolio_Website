@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+  <div id="Layer1_Container" class="w-screen h-screen bg-stone-950">
+    <div class="w-screen h-30 fixed z-10">
+      <nav id="NavBar" class="w-screen relative flex justify-normal h-20 bg-stone-950">
+        <div id="HambMenu_Container" class="h-20 w-20 relative bg-stone-950 flex justify-center shrink-0">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" stroke-width="2">
+              <path d="M4 6l16 0"></path>
+              <path d="M4 12l16 0"></path>
+              <path d="M4 18l16 0"></path>
+            </svg>
+          </button>
+        </div>
+        <div id="LogoHolder_Container" class="h-20 w-60 relative bg-stone-950"></div>
+        <div id="Buttons" class="lg:h-20 lg:w-[700px] lg:relative lg:flex lg:flex-row">
+          <ul class="hidden lg:text-3xl lg:text-white lg:font-medium lg:font-sans lg:flex lg:flex-row lg:justify-between lg:gap-10 lg:py-5 lg:px-5">
+            <li>
+              <a href="index.html" class="block outline-1 outline-dotted outline-offset-8 rounded-md hover:bg-purple-400 hover:text-black">Home</a>
+            </li>
+            <li>
+              <a href="aboutMe.html" class="block outline-1 outline-dotted outline-offset-8 rounded-md hover:bg-purple-400 hover:text-black">About Me</a>
+            </li>
+            <li>
+              <a href="" class="block outline-1 outline-dotted outline-offset-8 rounded-md hover:bg-purple-400 hover:text-black">Get in touch</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="ToolBar" class="w-screen h-10 bg-purple-500 flex justify-start ring-2 ring-black">
+        <div id="TB_Theme_Container" class="h-10 w-20 relative ring-2 ring-black"></div>
+        <button id="TB_BiggerIcons_Cont" class="h-10 w-20 relative flex justify-center cursor-pointer" alt="Button for adjusting the icon sizes" onclick="TabShowHide()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+            <path d="M3 5h11"></path>
+            <path d="M12 7l2 -2l-2 -2"></path>
+            <path d="M5 3l-2 2l2 2"></path>
+            <path d="M19 10v11"></path>
+            <path d="M17 19l2 2l2 -2"></path>
+            <path d="M21 12l-2 -2l-2 2"></path>
+            <path d="M3 10m0 2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2z"></path>
+          </svg>
+        </button>
+        <div id="TB_TextButtons" class="h-10 w-32 relative ring-2 ring-black flex justify-start">
+          <button id="sm_txt_btn" class="h-10 w-20 relative flex justify-center " onclick="changeFontSize('decrease')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+              <path d="M6.5 15.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"></path>
+              <path d="M10 12v7"></path>
+              <path d="M17.5 15.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"></path>
+              <path d="M21 12v7"></path>
+            </svg>
+          </button>
+          <button id="md_txt_btn" class="h-10 w-20 relative flex justify-center" onclick="changeFontSize('increase')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+                <path d="M3 19v-10.5a3.5 3.5 0 0 1 7 0v10.5"></path>
+                <path d="M3 13h7"></path>
+                <path d="M14 19v-10.5a3.5 3.5 0 0 1 7 0v10.5"></path>
+                <path d="M14 13h7"></path>
+              </svg>
+          </button>
+        </div>
+      </div>
+      <div id="Popup_w2" class="hidden z-10 h-32 w-20 absolute bg-green-700 left-20 top-32"></div>
+    </div>
+    <div id="Layer2_Container" class="bg-stone-800 relative flex justify-start flex-col shrink-0 w-screen inset-y-32">
+        <div id="imgSliderHolder" class="relative size-auto m-auto overflow-hidden flex flex-col justify-center">
+            <div id="Photo Slides">
+                <div class="size-80 aspect-video p-5">
+                    <img src="content/Slide_1.jpg" class="slides object-cover w-full">
+                </div>
+                <div class="size-80 aspect-video p-5">
+                    <img src="content/Slide_2.jpg" class="slides object-cover w-full">
+                </div>
+                <div class="size-80 aspect-video p-5">
+                    <img src="content/Slide_3.jpg" class="slides object-cover w-full">
+                </div>
+                <div class="size-80 aspect-video p-5">
+                    <img src="content/Slide_4.png" class="slides object-cover w-full ">
+                </div>
+            </div>
+            <button id="prev" class="hidden size-32 p-12 bg-stone-300" onclick="prevSlide()">&#10094</button>
+            <button id="next" class="hidden size-32 p-12 bg-stone-300" onclick="nextSlide()">&#10095</button>
+        </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
